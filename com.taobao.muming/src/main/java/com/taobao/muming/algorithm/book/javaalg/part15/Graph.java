@@ -10,9 +10,9 @@ public class Graph {
 	
 	private final int MAX_VERTS = 20;
 	private final int INFINITY = Integer.MAX_VALUE;
-	//¶¥µã
+	//é¡¶ç‚¹
 	private Vertex vertexList[];
-	//ÁÚ½Ó¾ØÕó
+	//é‚»æ¥çŸ©é˜µ
 	private int adjMat[][];
 	private int nVerts;
 	private int currentVert;
@@ -39,7 +39,7 @@ public class Graph {
 		adjMat[end][start] = weight;
 	}
 	
-	//×îĞ¡Éú³ÉÊ÷Ëã·¨
+	//æœ€å°ç”Ÿæˆæ ‘ç®—æ³•
 	public void mstw(){
 		currentVert = 0;
 		
@@ -78,7 +78,7 @@ public class Graph {
 		//int queueIndex = 
 	}
 
-	//×î¶ÌÂ·¾¶Ëã·¨
+	//æœ€çŸ­è·¯å¾„ç®—æ³•
 	public void dijkstra(){
 		
 	}

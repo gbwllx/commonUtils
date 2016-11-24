@@ -2,15 +2,15 @@ package com.taobao.muming.test;
 
 public class FinalTest {
 	public static void main(String[] args){
-		//ÕıÈ·
+		//æ­£ç¡®
 //		final int x;
 //		x = 10;
 //		System.out.println(x);
-		//´íÎó
+		//é”™è¯¯
 //		final int x = 0;
 //		x = 10;
 //		System.out.println(x);
-		//´íÎó
+		//é”™è¯¯
 //		final Integer x = null;
 //		x = 10;
 //		System.out.println(x);

@@ -1,7 +1,7 @@
 package com.taobao.muming.algorithm.book.javaalg.part4;
 
 public class Queue {//java.util.Queue 
-	/*队列，循环队列（用的多），双端队列（栈和队列的综合，很少用）*/
+	/*闃熷垪锛屽惊鐜槦鍒楋紙鐢ㄧ殑澶氾級锛屽弻绔槦鍒楋紙鏍堝拰闃熷垪鐨勭患鍚堬紝寰堝皯鐢級*/
 	private int len;
 	private int[] arr;
 	private int front;

@@ -1,10 +1,10 @@
 package com.taobao.muming.algorithm.book.javaalg.part7;
 
 public class QuickSort {
-	//递归非递归两种，效率差不多
+	//閫掑綊闈為�掑綊涓ょ锛屾晥鐜囧樊涓嶅
 	private static int[] arr;
 	/*
-	 * 递归方法
+	 * 閫掑綊鏂规硶
 	 */
 	public static void quickSort(int begin, int end){	
 		if(begin < end){

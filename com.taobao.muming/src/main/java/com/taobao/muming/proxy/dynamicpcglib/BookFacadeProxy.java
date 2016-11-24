@@ -20,9 +20,9 @@ public class BookFacadeProxy implements MethodInterceptor {
 	
 	public Object intercept(Object obj, Method method, Object[] args,
 			MethodProxy proxy) throws Throwable {
-        System.out.println("ÊÂÎï¿ªÊ¼");  
+        System.out.println("äº‹ç‰©å¼€å§‹");  
         proxy.invokeSuper(obj, args);  
-        System.out.println("ÊÂÎï½áÊø");  
+        System.out.println("äº‹ç‰©ç»“æŸ");  
         return null;
 	}
 	

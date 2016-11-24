@@ -3,11 +3,11 @@ package com.taobao.muming.utils;
 import java.io.ByteArrayOutputStream;
 
 public class CharsetUtils {
-	//²ÎÊı£º 
-	//i - Òª×ª»»³É×Ö·û´®µÄÕûÊı¡£ 
-	//·µ»Ø£º 
-	//ÓÃÊ®Áù½øÖÆ£¨»ùÊı 16£©²ÎÊı±íÊ¾µÄÎŞ·ûºÅÕûÊıÖµµÄ×Ö·û´®±íÊ¾ĞÎÊ½¡£ 
-	// ×ª»¯×Ö·û´®ÎªÊ®Áù½øÖÆ±àÂë 
+	//å‚æ•°ï¼š 
+	//i - è¦è½¬æ¢æˆå­—ç¬¦ä¸²çš„æ•´æ•°ã€‚ 
+	//è¿”å›ï¼š 
+	//ç”¨åå…­è¿›åˆ¶ï¼ˆåŸºæ•° 16ï¼‰å‚æ•°è¡¨ç¤ºçš„æ— ç¬¦å·æ•´æ•°å€¼çš„å­—ç¬¦ä¸²è¡¨ç¤ºå½¢å¼ã€‚ 
+	// è½¬åŒ–å­—ç¬¦ä¸²ä¸ºåå…­è¿›åˆ¶ç¼–ç  
 	public static String toHexString(String s) {
 		String str = "";
 		for (int i = 0; i < s.length(); i++) {
@@ -18,7 +18,7 @@ public class CharsetUtils {
 		return str;
 	}
 
-	// ×ª»¯Ê®Áù½øÖÆ±àÂëÎª×Ö·û´® 
+	// è½¬åŒ–åå…­è¿›åˆ¶ç¼–ç ä¸ºå­—ç¬¦ä¸² 
 	public static String toStringHex(String s) {
 		byte[] baKeyword = new byte[s.length() / 2];
 		for (int i = 0; i < baKeyword.length; i++) {
@@ -38,17 +38,17 @@ public class CharsetUtils {
 	}
 
 	/* 
-	* 16½øÖÆÊı×Ö×Ö·û¼¯ 
+	* 16è¿›åˆ¶æ•°å­—å­—ç¬¦é›† 
 	*/ 
 	private static String hexString="0123456789ABCDEF"; 
 	/* 
-	* ½«×Ö·û´®±àÂë³É16½øÖÆÊı×Ö,ÊÊÓÃÓÚËùÓĞ×Ö·û£¨°üÀ¨ÖĞÎÄ£© 
+	* å°†å­—ç¬¦ä¸²ç¼–ç æˆ16è¿›åˆ¶æ•°å­—,é€‚ç”¨äºæ‰€æœ‰å­—ç¬¦ï¼ˆåŒ…æ‹¬ä¸­æ–‡ï¼‰ 
 	*/ 
 	public static String encode(String str) {
-		// ¸ù¾İÄ¬ÈÏ±àÂë»ñÈ¡×Ö½ÚÊı×é
+		// æ ¹æ®é»˜è®¤ç¼–ç è·å–å­—èŠ‚æ•°ç»„
 		byte[] bytes = str.getBytes();
 		StringBuilder sb = new StringBuilder(bytes.length * 2);
-		// ½«×Ö½ÚÊı×éÖĞÃ¿¸ö×Ö½Ú²ğ½â³É2Î»16½øÖÆÕûÊı
+		// å°†å­—èŠ‚æ•°ç»„ä¸­æ¯ä¸ªå­—èŠ‚æ‹†è§£æˆ2ä½16è¿›åˆ¶æ•´æ•°
 		for (int i = 0; i < bytes.length; i++) {
 			sb.append(hexString.charAt((bytes[i] & 0xf0) >> 4));
 			sb.append(hexString.charAt((bytes[i] & 0x0f) >> 0));
@@ -57,12 +57,12 @@ public class CharsetUtils {
 	}
 
 	/* 
-	* ½«16½øÖÆÊı×Ö½âÂë³É×Ö·û´®,ÊÊÓÃÓÚËùÓĞ×Ö·û£¨°üÀ¨ÖĞÎÄ£© 
+	* å°†16è¿›åˆ¶æ•°å­—è§£ç æˆå­—ç¬¦ä¸²,é€‚ç”¨äºæ‰€æœ‰å­—ç¬¦ï¼ˆåŒ…æ‹¬ä¸­æ–‡ï¼‰ 
 	*/ 
 	public static String decode(String bytes) {
 		ByteArrayOutputStream baos = new ByteArrayOutputStream(
 				bytes.length() / 2);
-		// ½«Ã¿2Î»16½øÖÆÕûÊı×é×°³ÉÒ»¸ö×Ö½Ú
+		// å°†æ¯2ä½16è¿›åˆ¶æ•´æ•°ç»„è£…æˆä¸€ä¸ªå­—èŠ‚
 		for (int i = 0; i < bytes.length(); i += 2)
 			baos.write((hexString.indexOf(bytes.charAt(i)) << 4 | hexString
 					.indexOf(bytes.charAt(i + 1))));
@@ -70,7 +70,7 @@ public class CharsetUtils {
 	}
 	
 	/** 
-	* ½«Ö¸¶¨byteÊı×éÒÔ16½øÖÆµÄĞÎÊ½´òÓ¡µ½¿ØÖÆÌ¨ 
+	* å°†æŒ‡å®šbyteæ•°ç»„ä»¥16è¿›åˆ¶çš„å½¢å¼æ‰“å°åˆ°æ§åˆ¶å° 
 	* @param hint String 
 	* @param b byte[] 
 	* @return void 
@@ -105,8 +105,8 @@ public class CharsetUtils {
 	}
 
 	/** 
-	* ½«Á½¸öASCII×Ö·ûºÏ³ÉÒ»¸ö×Ö½Ú£» 
-	* Èç£º"EF"--> 0xEF 
+	* å°†ä¸¤ä¸ªASCIIå­—ç¬¦åˆæˆä¸€ä¸ªå­—èŠ‚ï¼› 
+	* å¦‚ï¼š"EF"--> 0xEF 
 	* @param src0 byte 
 	* @param src1 byte 
 	* @return byte 
@@ -122,8 +122,8 @@ public class CharsetUtils {
 	}
 
 	/** 
-	* ½«Ö¸¶¨×Ö·û´®src£¬ÒÔÃ¿Á½¸ö×Ö·û·Ö¸î×ª»»Îª16½øÖÆĞÎÊ½ 
-	* Èç£º"2B44EFD9" --> byte[]{0x2B, 0x44, 0xEF, 0xD9} 
+	* å°†æŒ‡å®šå­—ç¬¦ä¸²srcï¼Œä»¥æ¯ä¸¤ä¸ªå­—ç¬¦åˆ†å‰²è½¬æ¢ä¸º16è¿›åˆ¶å½¢å¼ 
+	* å¦‚ï¼š"2B44EFD9" --> byte[]{0x2B, 0x44, 0xEF, 0xD9} 
 	* @param src String 
 	* @return byte[] 
 	*/ 

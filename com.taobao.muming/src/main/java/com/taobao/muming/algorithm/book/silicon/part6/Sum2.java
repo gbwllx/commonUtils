@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Sum2 {
 	/*
-	 * ¶ÔÃ¿¸öÊı±éÀúÒ»´Î£¬Ö±µ½ÕÒµ½£¬Ê±¼ä¸´ÔÓ¶ÈO(N2)£¬¿Õ¼ä¸´ÔÓ¶ÈO(1)
+	 * å¯¹æ¯ä¸ªæ•°éå†ä¸€æ¬¡ï¼Œç›´åˆ°æ‰¾åˆ°ï¼Œæ—¶é—´å¤æ‚åº¦O(N2)ï¼Œç©ºé—´å¤æ‚åº¦O(1)
 	 */
 	public static void sum21(int[] arr, int dest){
 		System.out.println("sum21:");
@@ -24,7 +24,7 @@ public class Sum2 {
 	}
 
 	/*
-	 * 	É¨ÃèÒ»±é´æÈëhashmap£¬ÅĞ¶Ï²îÖµÊÇ·ñÔÚ±íÖĞ£¬Ê±¼ä¸´ÔÓ¶ÈO(N)£¬¿Õ¼ä¸´ÔÓ¶ÈO(N)
+	 * 	æ‰«æä¸€éå­˜å…¥hashmapï¼Œåˆ¤æ–­å·®å€¼æ˜¯å¦åœ¨è¡¨ä¸­ï¼Œæ—¶é—´å¤æ‚åº¦O(N)ï¼Œç©ºé—´å¤æ‚åº¦O(N)
 	 */
 	public static void sum22(int[] arr, int dest){
 		System.out.println("sum22:");
@@ -47,7 +47,7 @@ public class Sum2 {
 	}
 	
 	/*
-	 * 	ÏÈÅÅĞòO(NlogN)£¬ÔÙ¶ş·Ö²éÕÒO(NlogN),Ê±¼ä¸´ÔÓ¶ÈO(NlogN),¿Õ¼ä¸´ÔÓ¶ÈO(1),È±µã¸Ä±äÔ­Êı×é½á¹¹
+	 * 	å…ˆæ’åºO(NlogN)ï¼Œå†äºŒåˆ†æŸ¥æ‰¾O(NlogN),æ—¶é—´å¤æ‚åº¦O(NlogN),ç©ºé—´å¤æ‚åº¦O(1),ç¼ºç‚¹æ”¹å˜åŸæ•°ç»„ç»“æ„
 	 */
 	public static void sum23(int[] arr, int dest){
 		System.out.println("sum23:");

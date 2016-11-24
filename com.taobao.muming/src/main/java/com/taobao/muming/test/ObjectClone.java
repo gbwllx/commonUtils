@@ -18,11 +18,11 @@ public class ObjectClone {
     	System.out.println(s);
     	ByteArrayOutputStream byteOut = new ByteArrayOutputStream();  
     	ObjectOutputStream out= new ObjectOutputStream(byteOut);  
-    	out.writeObject(s);//Ğ´¶ÔÏó£¬ĞòÁĞ»¯  
+    	out.writeObject(s);//å†™å¯¹è±¡ï¼Œåºåˆ—åŒ–  
     	ByteArrayInputStream byteIn = new ByteArrayInputStream(byteOut.toByteArray());   
     	ObjectInputStream in = new ObjectInputStream(byteIn);
     	@SuppressWarnings("unchecked")
-		Set<Long> dv = (Set<Long>)in.readObject(); //¶Á¶ÔÏó£¬·´ĞòÁĞ»¯  
+		Set<Long> dv = (Set<Long>)in.readObject(); //è¯»å¯¹è±¡ï¼Œååºåˆ—åŒ–  
     	System.out.println(dv==c);
     	
     }

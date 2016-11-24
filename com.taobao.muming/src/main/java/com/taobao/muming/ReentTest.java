@@ -27,7 +27,7 @@ public class ReentTest {
       
   
     class TestThread extends Thread{  
-        //×Ô¶¨ÒåÏß³ÌÃû×Ö  
+        //è‡ªå®šä¹‰çº¿ç¨‹åå­—  
         TestThread(String str){  
             super(str);           
         }  

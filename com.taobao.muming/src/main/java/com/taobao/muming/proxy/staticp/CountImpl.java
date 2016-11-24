@@ -2,10 +2,10 @@ package com.taobao.muming.proxy.staticp;
 
 public class CountImpl implements Count{
 	public void queryCount() {
-		System.out.println("查看账户方法...");
+		System.out.println("鏌ョ湅璐︽埛鏂规硶...");
 	}
 
 	public void updateCount() {
-		System.out.println("修改账户方法...");
+		System.out.println("淇敼璐︽埛鏂规硶...");
 	}
 }

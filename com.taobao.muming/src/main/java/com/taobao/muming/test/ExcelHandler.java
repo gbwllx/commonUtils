@@ -93,14 +93,14 @@ public class ExcelHandler {
 	}
 	
     public void list2Excel(List<UserInfoDO> xls) throws Exception {
-        // »ñÈ¡×ÜÁĞÊı
+        // è·å–æ€»åˆ—æ•°
         int CountColumnNum = 9;
-        // ´´½¨ExcelÎÄµµ
+        // åˆ›å»ºExcelæ–‡æ¡£
         HSSFWorkbook hwb = new HSSFWorkbook();
 
-        // sheet ¶ÔÓ¦Ò»¸ö¹¤×÷Ò³
+        // sheet å¯¹åº”ä¸€ä¸ªå·¥ä½œé¡µ
         HSSFSheet sheet = hwb.createSheet("pldrxkxxmb");
-        HSSFRow firstrow = sheet.createRow(0); // ÏÂ±êÎª0µÄĞĞ¿ªÊ¼
+        HSSFRow firstrow = sheet.createRow(0); // ä¸‹æ ‡ä¸º0çš„è¡Œå¼€å§‹
         HSSFCell[] firstcell = new HSSFCell[CountColumnNum];
         String[] names = new String[CountColumnNum];
         names[0] = "activityawardprice";
@@ -117,12 +117,12 @@ public class ExcelHandler {
             firstcell[j].setCellValue(new HSSFRichTextString(names[j]));
         }
         for(int i = 0; i < xls.size(); i++){
-            // ´´½¨Ò»ĞĞ
+            // åˆ›å»ºä¸€è¡Œ
             HSSFRow row = sheet.createRow(i + 1);
             //HSSFCell[] cell = new HSSFCell[CountColumnNum];
-            // µÃµ½Òª²åÈëµÄÃ¿Ò»Ìõ¼ÇÂ¼
+            // å¾—åˆ°è¦æ’å…¥çš„æ¯ä¸€æ¡è®°å½•
             UserInfoDO user = xls.get(i);
-                // ÔÚÒ»ĞĞÄÚÑ­»·
+                // åœ¨ä¸€è¡Œå†…å¾ªç¯
                 HSSFCell xh = row.createCell(0);
 
 				xh.setCellValue(new HSSFRichTextString(user.getActivityAwardPrice()));
@@ -143,7 +143,7 @@ public class ExcelHandler {
                 HSSFCell it = row.createCell(8);
                 it.setCellValue(new HSSFRichTextString(user.getIteminfo()));   
         }
-        // ´´½¨ÎÄ¼şÊä³öÁ÷£¬×¼±¸Êä³öµç×Ó±í¸ñ
+        // åˆ›å»ºæ–‡ä»¶è¾“å‡ºæµï¼Œå‡†å¤‡è¾“å‡ºç”µå­è¡¨æ ¼
         OutputStream out = new FileOutputStream("C:\\Users\\gubing.gb\\Downloads\\17_1.xls");
         hwb.write(out);
         out.close();
@@ -155,9 +155,9 @@ public class ExcelHandler {
 
                 String encoding="GBK";
                 File file=new File(filePath);
-                if(file.isFile() && file.exists()){ //ÅĞ¶ÏÎÄ¼şÊÇ·ñ´æÔÚ
+                if(file.isFile() && file.exists()){ //åˆ¤æ–­æ–‡ä»¶æ˜¯å¦å­˜åœ¨
                     InputStreamReader read = new InputStreamReader(
-                    new FileInputStream(file),encoding);//¿¼ÂÇµ½±àÂë¸ñÊ½
+                    new FileInputStream(file),encoding);//è€ƒè™‘åˆ°ç¼–ç æ ¼å¼
                     BufferedReader bufferedReader = new BufferedReader(read);
                     String lineTxt = null;
                     while((lineTxt = bufferedReader.readLine()) != null){
@@ -177,10 +177,10 @@ public class ExcelHandler {
                     }
                     read.close();
         }else{
-            System.out.println("ÕÒ²»µ½Ö¸¶¨µÄÎÄ¼ş");
+            System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šçš„æ–‡ä»¶");
         }
         } catch (Exception e) {
-            System.out.println("¶ÁÈ¡ÎÄ¼şÄÚÈİ³ö´í");
+            System.out.println("è¯»å–æ–‡ä»¶å†…å®¹å‡ºé”™");
             e.printStackTrace();
         }
      

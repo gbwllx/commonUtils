@@ -16,11 +16,11 @@ public class BookFacadeProxy implements InvocationHandler {
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
 		Object result = null;
-		System.out.println("ÊÂÎñ¿ªÊ¼");
+		System.out.println("äº‹åŠ¡å¼€å§‹");
 		
 		result = method.invoke(target, args);
 		
-		System.out.println("ÊÂÎñ½áÊø");
+		System.out.println("äº‹åŠ¡ç»“æŸ");
 		return result;
 	}
 

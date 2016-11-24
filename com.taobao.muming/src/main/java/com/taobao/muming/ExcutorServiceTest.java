@@ -1,31 +1,33 @@
 package com.taobao.muming;
 
 import java.io.IOException;
-import java.util.Map;
+import java.util.Date;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class ExcutorServiceTest {
 	public static void main(String[] args) throws IOException, InterruptedException {
-        // ´´½¨Ò»¸ö¹Ì¶¨´óĞ¡µÄÏß³Ì³Ø
+        // åˆ›å»ºä¸€ä¸ªå›ºå®šå¤§å°çš„çº¿ç¨‹æ± 
         ExecutorService service = Executors.newFixedThreadPool(3);
         for (int i = 0; i < 10; i++) {
-            System.out.println("´´½¨Ïß³Ì" + i);
+            System.out.println("åˆ›å»ºçº¿ç¨‹" + i);
             Runnable run = new Runnable() {
                 //@Override
                 public void run() {
-                    System.out.println("Æô¶¯Ïß³Ì");
+                    System.out.println("å¯åŠ¨çº¿ç¨‹");
                 }
             };
             
-            // ÔÚÎ´À´Ä³¸öÊ±¼äÖ´ĞĞ¸ø¶¨µÄÃüÁî
+            // åœ¨æœªæ¥æŸä¸ªæ—¶é—´æ‰§è¡Œç»™å®šçš„å‘½ä»¤
             service.execute(run);
         }
-        // ¹Ø±ÕÆô¶¯Ïß³Ì
+        // å…³é—­å¯åŠ¨çº¿ç¨‹
         service.shutdown();
-        // µÈ´ı×ÓÏß³Ì½áÊø£¬ÔÙ¼ÌĞøÖ´ĞĞÏÂÃæµÄ´úÂë
+        // ç­‰å¾…å­çº¿ç¨‹ç»“æŸï¼Œå†ç»§ç»­æ‰§è¡Œä¸‹é¢çš„ä»£ç 
         service.awaitTermination(Long.MAX_VALUE, TimeUnit.DAYS);
         System.out.println("all thread complete");
+        
+        System.out.println(new Date().getTime());
     }
 }

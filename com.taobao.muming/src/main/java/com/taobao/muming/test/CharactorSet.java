@@ -13,14 +13,14 @@ import org.apache.commons.lang.StringUtils;
 
 
 public class CharactorSet {
-	//Í¨¹ı×ª»»Á÷´¦Àí   InputStreamReader  OutputStreamWriter
+	//é€šè¿‡è½¬æ¢æµå¤„ç†   InputStreamReader  OutputStreamWriter
 	public static void main(String[] args) throws IOException{		
-//		String s = "ÄãºÃ";
+//		String s = "ä½ å¥½";
 //		byte[] b1 = s.getBytes();
 //		
 //		System.out.println(Arrays.toString(b1));
 		
-//		String s = "ÄãºÃ";
+//		String s = "ä½ å¥½";
 //		byte[] b1 = s.getBytes("GBK");
 //		
 //		System.out.println(Arrays.toString(b1));
@@ -32,7 +32,7 @@ public class CharactorSet {
 		
 		//writeText();
 //		String s = readText();
-		//String xx = "å½“æ‰€æœ‰strsä¸ºblankæ˜¯ä¼šæŠ›å‡º";
+		//String xx = "è¤°æ’´å¢éˆå¡»trsæ¶“ç¯µlanké„îˆ™ç´°é¶æ¶˜åš­";
 		//System.out.println(new String(xx.getBytes("gbk"), "utf-8"));
 		//String s ="32222c226170705f6e616d65223a22c9b3b7a2b9dcbcd2222c2261706b5f6e61";
 		String pre = "62757965724e69636b3d5b31cac5cbaec0b6ccec5d2c20706169644665653d5b ";
@@ -79,7 +79,7 @@ public class CharactorSet {
 	
 	public static void writeText() throws IOException{
 		OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("gbk.txt"), "utf-8");
-		osw.write("ÄãºÃ");
+		osw.write("ä½ å¥½");
 		osw.close();
 	}
 

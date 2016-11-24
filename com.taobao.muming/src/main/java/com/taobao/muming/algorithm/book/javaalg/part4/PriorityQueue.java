@@ -1,5 +1,5 @@
 package com.taobao.muming.algorithm.book.javaalg.part4;
 
-public class PriorityQueue {//最简单用插入排序实现   java内置用堆实现
+public class PriorityQueue {//鏈�绠�鍗曠敤鎻掑叆鎺掑簭瀹炵幇   java鍐呯疆鐢ㄥ爢瀹炵幇
 
 }

@@ -1,6 +1,6 @@
 package com.taobao.muming.algorithm.book.javaalg.part4;
 
-public class Stack {//java.util.Stack ÏÂ±ßÒÀÀµvector
+public class Stack {//java.util.Stack ä¸‹è¾¹ä¾èµ–vector
 	private int len;
 	private int[] arr;
 	//private Pair[] parr;

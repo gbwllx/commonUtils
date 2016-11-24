@@ -1,14 +1,14 @@
 package com.taobao.muming.proxy.dynamicpcglib;
 
 /*
- * Ã»ÓĞÊµÏÖ½Ó¿ÚµÄÊµÏÖÀà
+ * æ²¡æœ‰å®ç°æ¥å£çš„å®ç°ç±»
  */
 public class BookFacadeImpl1 {
 	public void addBook(){
-		System.out.println("Ôö¼ÓÍ¼ÊéµÄÆÕÍ¨·½·¨");
+		System.out.println("å¢åŠ å›¾ä¹¦çš„æ™®é€šæ–¹æ³•");
 	}
 	
 	public void deleteBook(){
-		System.out.println("Ôö¼ÓÍ¼ÊéµÄÆÕÍ¨·½·¨");
+		System.out.println("å¢åŠ å›¾ä¹¦çš„æ™®é€šæ–¹æ³•");
 	}
 }

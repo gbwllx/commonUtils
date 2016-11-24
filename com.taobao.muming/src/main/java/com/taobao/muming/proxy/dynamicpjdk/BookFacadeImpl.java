@@ -2,6 +2,6 @@ package com.taobao.muming.proxy.dynamicpjdk;
 
 public class BookFacadeImpl implements BookFacade{
     public void addBook() {  
-        System.out.println("Ôö¼ÓÍ¼Êé·½·¨¡£¡£¡£");  
+        System.out.println("å¢žåŠ å›¾ä¹¦æ–¹æ³•ã€‚ã€‚ã€‚");  
     }  
 }

@@ -8,15 +8,15 @@ public class CountProxy implements Count{
 	}
 	
 	public void queryCount() {
-		System.out.println("事务处理之前");  
+		System.out.println("浜嬪姟澶勭悊涔嬪墠");  
 		countImpl.queryCount();
-		System.out.println("事务处理之后");  
+		System.out.println("浜嬪姟澶勭悊涔嬪悗");  
 	}
 
 	public void updateCount() {
-		System.out.println("事务处理之前");  
+		System.out.println("浜嬪姟澶勭悊涔嬪墠");  
 		countImpl.updateCount();
-		System.out.println("事务处理之后");  
+		System.out.println("浜嬪姟澶勭悊涔嬪悗");  
 	}
 	
 }
