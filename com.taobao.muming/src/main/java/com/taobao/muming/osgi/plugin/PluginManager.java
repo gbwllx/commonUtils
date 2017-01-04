@@ -1,4 +1,5 @@
-package plugin;
+package com.taobao.muming.osgi.plugin;
+
 
 
 import java.io.File;

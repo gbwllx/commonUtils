@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 public class TypeErase {
+
 	@SuppressWarnings("rawtypes")
 	public static void main(String args[]){
 		Class c1 = new ArrayList<Integer>().getClass();

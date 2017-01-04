@@ -1,8 +1,8 @@
-package plugin;
+package com.taobao.muming.osgi.plugin;
 
-import plugin.api.ICheckService;
-import plugin.api.IRuleService;
 
+import com.taobao.muming.osgi.plugin.api.ICheckService;
+import com.taobao.muming.osgi.plugin.api.IRuleService;
 
 /**
  * Created by gubing.gb on 2016/12/9.

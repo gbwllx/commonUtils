@@ -1,4 +1,4 @@
-package plugin.api;
+package com.taobao.muming.osgi.plugin.api;
 
 /**
  * Created by gubing.gb on 2016/12/9.
