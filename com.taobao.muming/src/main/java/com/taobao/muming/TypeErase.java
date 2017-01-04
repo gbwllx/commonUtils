@@ -1,4 +1,4 @@
-package com.taobao.muming.Util;
+package com.taobao.muming;
 
 import java.util.ArrayList;
 import java.util.Arrays;
