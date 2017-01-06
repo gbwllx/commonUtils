@@ -1,5 +1,6 @@
 package com.taobao.muming.lambda;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
@@ -35,6 +36,14 @@ public class LambdaDemo {
     }
 
     private static void demo11() {
+        List<String> features = Arrays.asList("Lambdas", "Default Method", "Stream API", "Date and Time API");
+        List<String> result = new ArrayList<String>();
+
+        features.forEach(n -> {
+            result.add(n);
+            result.add(n);
+        });
+        System.out.println();
     }
 
     private static void demo10() {

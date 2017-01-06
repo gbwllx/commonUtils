@@ -32,7 +32,7 @@ class Singleton4 {
     }
 }
 
-//3. 双重校验，按需加载，线程安全【可用】
+//3. 双重校验，按需加载，线程安全【可用】 JSR133
 class Singleton3 {
     private volatile static Singleton3 singleton;
     private Singleton3 (){}
