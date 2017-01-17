@@ -1,4 +1,4 @@
-package com.taobao.muming.interview.jvm;
+package com.taobao.muming.interview.jvm.error;
 
 import java.util.ArrayList;
 import java.util.List;

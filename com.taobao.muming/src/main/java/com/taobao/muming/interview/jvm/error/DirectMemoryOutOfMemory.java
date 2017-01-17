@@ -1,4 +1,4 @@
-package com.taobao.muming.interview.jvm;
+package com.taobao.muming.interview.jvm.error;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;

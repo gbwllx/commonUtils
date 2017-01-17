@@ -1,5 +1,8 @@
 package com.taobao.muming;
 
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.HashMap;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -23,7 +26,7 @@ public class CallableDemo implements Callable<String> {
 	public static void main(String[] args) {
 		ExecutorService pool = Executors.newFixedThreadPool(2);
 		CallableDemo demo = new CallableDemo();
-
+		//StringUtils.isNotEmpty("");
 		pool.submit(new CallableDemo());
 		pool.submit(new CallableDemo());
 	}

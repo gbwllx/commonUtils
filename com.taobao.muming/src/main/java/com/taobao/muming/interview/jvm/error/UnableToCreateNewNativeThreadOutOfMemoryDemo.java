@@ -1,4 +1,4 @@
-package com.taobao.muming.interview.jvm;
+package com.taobao.muming.interview.jvm.error;
 
 /**
  * @description: 原因：Stack空间不足以创建额外的线程，要么是创建的线程过多，要么是Stack空间确实小了。

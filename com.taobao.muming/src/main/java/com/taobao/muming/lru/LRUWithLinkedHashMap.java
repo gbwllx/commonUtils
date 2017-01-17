@@ -78,7 +78,7 @@ public class LRUWithLinkedHashMap<K,V>  {
 	public synchronized Collection<Map.Entry<K,V>> getAll() {
 	    return new ArrayList<Map.Entry<K,V>>(map.entrySet()); }
 
-	// Test routine for the LRUCache class.
+	// SequenceNumber routine for the LRUCache class.
 	public static void main (String[] args) {
 	    LRUWithLinkedHashMap<String,String> c = new LRUWithLinkedHashMap<String, String>(3);
 	   c.put ("1", "one");                           // 1

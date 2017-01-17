@@ -20,7 +20,7 @@ public class ThreadLocalDemo {
     }
 
     public static void main(String[] args) {
-        ThreadLocalDemo sn = new ThreadLocalDemo();
+        final ThreadLocalDemo sn = new ThreadLocalDemo();
 
         new Thread(new Runnable(){
             public void run()
