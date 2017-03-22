@@ -1,0 +1,12 @@
+package com.taobao.muming.engineering.designpattern.creatorpattern.factorypattern.simplefactory;
+
+import com.taobao.muming.engineering.designpattern.creatorpattern.factorypattern.simplefactory.domain.XxxDO;
+
+/**
+ * Created by zhangzhiqi on 16/12/25.
+ */
+public class BbXxxServiceImpl implements XxxService {
+    public XxxDO getResult() {
+        return new XxxDO();
+    }
+}
