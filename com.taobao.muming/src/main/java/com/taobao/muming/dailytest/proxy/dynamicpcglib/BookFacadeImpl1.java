@@ -1,4 +1,4 @@
-package com.taobao.muming.Util.proxy.dynamicpcglib;
+package com.taobao.muming.dailytest.proxy.dynamicpcglib;
 
 /*
  * 没有实现接口的实现类
